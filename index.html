@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>JustDissert</title>
+</head>
+<body>
+
+    <!--title bar -->
+    <div class="title flex align-center justify-between">
+        <h1>Just<span>Dessert</span></h1>
+        <div class="flex align-center justify-between">
+            <button onmouseover="addShadow(this)" onmouseleave="removeShadow(this)" onclick="removeJoin(this)">Join</button>
+            <button onmouseover="addShadow(this)" onmouseleave="removeShadow(this)">Login</button>
+        </div>
+    </div>
+
+    <!-- search bar -->
+    <div class="search flex align-center justify-around">
+        <div class="searchbox flex align-center justify-between">
+            <input id="go" type="text">
+            <button onmouseover="addShadow(this)" onmouseleave="removeShadow(this)" onclick="alertGo(this)">GO</button>
+        </div>
+        <div>
+            <img onmouseover="addShadow(this)" onmouseleave="removeShadow(this)" src="./imgs/blueberry-g7e08e1407_1920.jpg" alt="" height="100" width="100">
+            <p>Yumm!</p>
+        </div>
+        <div>
+            <img onmouseover="addShadow(this)" onmouseleave="removeShadow(this)" src="./imgs/cake-g441730266_1920.jpg" alt=""  height="100" width="100">
+            <p>Yumm!</p>
+        </div>
+        <div>
+            <img onmouseover="addShadow(this)" onmouseleave="removeShadow(this)" src="./imgs/colorful-g9f2a425df_1920.jpg" alt=""  height="100" width="100">
+            <p>Yumm!</p>
+        </div>
+        <div>
+            <img onmouseover="addShadow(this)" onmouseleave="removeShadow(this)" src="./imgs/glass-jar-gc63387f5a_1920.jpg" alt=""  height="100" width="100">
+            <p>Yumm!</p>
+        </div>
+    </div>
+
+    <!-- columns-main -->
+    <div class="columns flex">
+        <div class="col-3">
+            <div class="recipe-card">
+                <h1>Recipe of the day</h1>
+                <img class="recipe-img" src="./imgs/eclair-g9140e0e83_1920.jpg" alt="">
+                <div class="flex align-center justify-between">
+                    <p>Orange Tart Jelly Tea Thing</p>
+                    <div class="flex align-center justify-between">
+                        <img onclick="like('#likes-1')" class="heart" src="./imgs/icon-g0b7773224_1280.png" alt="" width="20px" height="20px">
+                        <p id="likes-1">66</p>
+                    </div>
+                </div>
+                <p>By <a href="">Jambo</a></p>
+            </div>
+            <a class="full-recipe" href="">See Full Recipe</a>
+        </div>
+
+        <div class="col-2">
+            <h6>Recommended for you</h6>
+            <div class="recipe-card">
+                <img class="recipe-img" src="./imgs/ice-cream-g135173fe5_1920.jpg" alt="">
+                <div class="flex align-center justify-between">
+                    <p>A Yummy ice-ceram in the summer is something like wow</p>
+                    <div class="flex align-center justify-between">
+                        <img onclick="like('#likes-2')" class="heart" src="./imgs/icon-g0b7773224_1280.png" alt="" width="20px" height="20px">
+                        <p id="likes-2">66</p>
+                    </div>
+                </div>
+                <p class="jambo">By <a href="">Jambo</a></p>
+            </div>
+
+            <div class="recipe-card">
+                <img class="recipe-img" src="./imgs/yogurt-g9c6e2ad26_1920.jpg" alt="">
+                <div class="flex align-center justify-between">
+                    <p>Orange Tart Jelly Tea Thing</p>
+                    <div class="flex align-center justify-between">
+                        <img onclick="like('#likes-3')" class="heart" src="./imgs/icon-g0b7773224_1280.png" alt="" width="20px" height="20px">
+                        <p id="likes-3">66</p>
+                    </div>
+                </div>
+                <p>By <a href="">Jambo</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
